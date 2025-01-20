@@ -1,5 +1,13 @@
 # svelte
 
+## 5.19.1
+
+### Patch Changes
+
+- fix: omit unnecessary nullish coallescing in template expressions ([#15056](https://github.com/sveltejs/svelte/pull/15056))
+
+- fix: more efficient template effect grouping ([#15050](https://github.com/sveltejs/svelte/pull/15050))
+
 ## 5.19.0
 
 ### Minor Changes
