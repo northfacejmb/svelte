@@ -88,7 +88,7 @@ class Todo {
 
 > [!NOTE] The compiler transforms `done` and `text` into `get`/`set` methods on the class prototype referencing private fields. This means the properties are not enumerable.
 
-When calling methods in JavaScript, the value of [`this`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/this) matters. This won't work, because `this` inside the `reset` method will be the `<button>` rather than the `Todo`:
+When calling methods in JavaScript, the value of [`this`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/this) matters. The example won't work, because `this` inside the `reset` method will be the `<button>` rather than the `Todo`:
 
 ```svelte
 <button onclick={todo.reset}>
